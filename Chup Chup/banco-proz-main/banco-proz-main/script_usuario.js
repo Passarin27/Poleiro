@@ -1,17 +1,21 @@
-
-const usuarios = JSON.parse(localStorage.getItem("usuarios"))
-const tabela = document.getElementById("tabela-usuarios")
-
-for (let index = 0; index < usuarios.length; index++) {
-    const usuario = usuarios[index];
-
+document.getElementById("Enviar").addEventListener ("click",function() {
+    const nome=document.getElementById("nome").value;
+    const Quantidade=getElementById("Quantidade").value;
+    const Descrição=getElementById("Descrição").value;
+    if(!nome||!Quantidade||!Descrição){
+        alert("Preencha todos os campos!");
+        return;
+    }
+    const tabela =
+    document.getElementById("tabelaprodutos").querySelector("tbody");
     const linha = `
-        <tr>
-            <td>${usuario.id}</td>
-            <td>${usuario.Nome}</td>
-            <td>${usuario.Quantidade}</td>
-            <td>${usuario.Descrição}</td>
-        </tr>
-    `
-    tabela.innerHTML += linha
-}
+    <tr>
+        <td>${usuario.Nome}</td>
+        <td>${usuario.Quantidade}</td>
+        <td>${usuario.Descrição}</td>
+    </tr>
+`
+ tabela.appendChild(novaLinha);
+ document.getElementById("cadastroForm").requestFullscreen();
+});
+
