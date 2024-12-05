@@ -25,3 +25,6 @@ document.getElementById("Enviar").addEventListener ("click",function() {
  document.getElementById("cadastroForm").requestFullscreen();
 });
 
+// Criar função pra salvar o que a pessoa colocou no formulario no local storage
+// Criar função pra apagar
+// Criar função pra editar
